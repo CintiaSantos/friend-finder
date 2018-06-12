@@ -2,10 +2,10 @@ var friendsData = require('../Data/friends.js');
 
 function apiRoutes(app) {
 
-    app.get('/api/friends.js', function (req, res) {
+    app.get('/api/friends', function (req, res) {
       res.json(friendsData);
     });
-    app.post('/api/friends.js', function (req, res) {
+    app.post('/api/friends', function (req, res) {
 
         var newFriend = {
           name: req.body.name,
